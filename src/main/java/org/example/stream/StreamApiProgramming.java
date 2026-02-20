@@ -5,11 +5,14 @@ import java.util.stream.Collectors;
 
 public class StreamApiProgramming {
     public static void main(String[] args) {
-//        level1();
-//        System.out.println("---------------------------------------");
-//        Level2();
-//        System.out.println("---------------------------------------");
+        level1();
+        System.out.println("---------------------------------------");
+        Level2();
+        System.out.println("---------------------------------------");
+        level3();
+    }
 
+    private static void level3() {
         List<String> names = Arrays.asList("tharun", "java", "stream","api","API");
 
 //        ⭐ Find Duplicate Elements
@@ -92,7 +95,7 @@ public class StreamApiProgramming {
         System.out.println(result1);
 
 //        3️⃣ Count Elements
-        int target=6;
+        int target=5;
         long cnt=nums.stream().filter(n -> n > target).count();
         System.out.println(cnt);
 
@@ -112,7 +115,7 @@ public class StreamApiProgramming {
         System.out.println(sum);
 
 //        8️⃣ Find Max / Min
-        int max=nums.stream().max(Integer :: compare).get();
+        int max=nums.stream().min(Integer :: compare).get();
         System.out.println(max);
 
 //        9️⃣ Convert List<String> to Single String
