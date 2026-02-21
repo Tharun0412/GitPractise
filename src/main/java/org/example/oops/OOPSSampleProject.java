@@ -7,12 +7,12 @@ public class OOPSSampleProject {
 
 
     OOPSSampleProject(int i){
-//    this();
+    this();
         System.out.println("Constructor initialised using 10");
     }
 
     public OOPSSampleProject(){
-        this(10);
+//        this(10);
         System.out.println("Constructor initialised");
 
     }
